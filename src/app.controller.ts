@@ -14,4 +14,12 @@ export class AppController {
   getHealth(): string {
     return 'welcome koushik';
   }
+
+  @Get('info')
+  getInfo(): { name: string; email: string } {
+    return {
+      name: 'koushik ahmed',
+      email: 'koushik@gmail.com',
+    };
+  }
 }
